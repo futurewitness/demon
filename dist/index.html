@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-16">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/favicon.df682a99.ico">
+  <link rel="apple-touch-icon" href="/favicon.df682a99.ico">
+  <title>Welcome to NEAR</title>
+  <link rel="stylesheet" href="/global.e50bbfba.css">
+<script src="/global.e50bbfba.js"></script></head>
+<body>
+  <div class="parallax"></div>
+  <main id="signed-out-flow" style="display: none">
+    <h1>Welcome to NEAR!</h1>
+    <p>
+      To make use of the NEAR blockchain, you need to sign in. The button
+      below will sign you in using NEAR Wallet.
+    </p>
+    <p>
+      By default, when your app runs in "development" mode, it connects
+      to a test network ("testnet") wallet. This works just like the main
+      network ("mainnet") wallet, but the NEAR Tokens on testnet aren't
+      convertible to other currencies – they're just for testing!
+    </p>
+    <p>
+      Go ahead and click the button below to try it out:
+    </p>
+    <p style="text-align: center; margin-top: 2.5em">
+      <button id="sign-in-button">Sign in</button>
+    </p>
+  </main>
+
+  <div id="signed-in-flow" style="display: none">
+    <button class="link" style="float: right" id="sign-out-button">
+      Sign out
+    </button>
+    <main>
+        <div id="root-container">
+          <div id="nav-menu">
+            <img id="logo" src="/untitled.c68daa64.png">
+            <div id="menu-items">
+              <ul id="items">
+                <li class="list-items"> <a class="link-text" href="#introduction">Who are we</a></li>
+                        <li class="list-items"> 
+                <a class="link-text" href="#check">Check Your Balance</a></li>
+                <li class="list-items"> <a class="link-text" href="#create">Create a fund</a></li>
+                <li class="list-items"> <a class="link-text" href="#info">Get fund information</a></li>
+               </ul>
+            </div>
+            <img style="width:3vw;height:vh" src="/github-logo.3f3afa96.png"><a href="https://github.com/e8128/hacktherainbow">
+          </a></div>
+           <div id="title">
+            <h1> Multipurpose Distributed Fund Management App</h1>
+           </div>
+          </div> 
+        
+          <div id="introduction">
+            <p class="title-text"> Introduction </p>
+         <img id="introduction-image" src="/happiness2.4e6ad06b.jpg" alt="hello">
+      <div id="introduction-text">
+        <p>  Have you ever tried to raise an office fund to go to the beach and found it hard to keep track of who has paid or not? Are you a creator who wants to set donation goals to produce new forms of content? We have a solution for you.
+
+          The Multipurpose Distributed Fund Management App uses state of the art blockchain technology to provide a secure and reliable way to transfer tokens between users and to funds. All transactions are logged in the blockchain, eliminating all forms of confusion. A robust suite of features allows fund managers to micromanage their funds for all sorts of different purposes. Try the Multipurpose Distributed Fund Management App today!
+          </p>
+      </div>
+     </div>
+     
+     <div class="barrier"></div>
+     
+       <div class="box">
+          <p id="check" class="title-text"> CHECK YOUR BALANCE HERE </p>
+         <div class="balance-container">
+          
+           Balance:<span data-behavior="balance"></span>
+           <form class="form-format" id="balance">
+             <fieldset class="field-format">
+              ENTER A FUND ID HERE:<br>
+            <input class="text-input" id="balance-input" type="text">
+            <input class="submit-button" type="submit">
+           </fieldset>
+           </form>
+         </div>
+        </div>
+      <div class="barrier"></div>
+
+      <div class="box">
+        <p id="create" class="title-text"> Create your fund here </p>
+       <div class="balance-container">
+         <form class="form-format" id="createFund" accept-charset="UTF-16">
+           <fieldset class="field-format">
+           <p>ENTER FUND INFO BELOW:</p>
+           <div class="label-text">Enter fund id:</div>
+          <input class="text-input" id="create-fund-id" type="text" placeholder="Enter fund id here">
+          <div class="label-text">Enter description:</div>
+          <input class="text-input" id="create-fund-description" type="text" placeholder="Enter fund description">
+          <br>
+          <input class="submit-button" type="submit">
+         </fieldset>
+         </form>
+       </div>
+      </div>
+      
+      <div class="barrier"></div>
+
+        <div class="box">
+          <p id="info" class="title-text"> Get fund information </p>
+          <div class="balance-container">
+          <form class="form-format" id="obtainFundInfo">
+            <span data-behavior="dummy"></span>
+            FUND-ID:
+            <span data-behavior="fund-id"></span>
+            FUND-TOKENS:
+            <span data-behavior="fund-tokens"></span>
+            FUND-MANAGER:
+            <span data-behavior="fund-manager"></span>
+            FUND-DESCRIPTION:
+            <span data-behavior="fund-description"></span>
+            <fieldset class="field-format">
+              <div class="label-text">ENTER FUND ID HERE:</div>
+            <input id="fund-info" class="text-input" type="text">
+            <input class="submit-button" type="submit">
+          </fieldset>
+          </form>
+        </div>
+        </div>
+
+        <div class="barrier"></div>
+        
+        <div class="box">
+          <p id="info" class="title-text"> Donate here </p>
+        <div class="balance-container">
+          <form class="form-format" id="donate">
+            <fieldset class="field-format">
+              <div class="label-text">Enter fund id:</div>
+            <input id="donate-fund" class="text-input" type="text">
+            <div class="label-text">Enter amount:</div>
+            <input id="donate-amount" class="text-input" type="text">
+            <input class="submit-button" type="submit">
+          </fieldset>
+          </form>
+        </div>
+        </div>
+
+
+      </main></div>  
+    
+  
+
+  <!-- <aside data-behavior="notification" style="display: none">
+    <a target="_blank" href="https://explorer.testnet.near.org/accounts/"></a>
+    called method: 'setGreeting' in contract:
+    <a target="_blank" href="https://explorer.testnet.near.org/accounts/"></a>
+    <footer>
+      <div>✔ Succeeded</div>
+      <div>Just now</div>
+    </footer>
+  </aside> -->
+
+  <script src="/src.e31bb0bc.js"></script>
+</body>
+</html>

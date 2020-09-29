@@ -1,0 +1,151 @@
+body {
+  margin:0;
+  left:0;
+}
+
+#nav-menu {
+  display:flex;
+  flex-direction:columns;
+  background-color:#d9ad7c;
+  flex-wrap:wrap;
+  height:100%;
+  position: fixed;
+  width:20%;
+  top:0;
+  left:0;
+  justify-content:center;
+  align-items:flex-start;
+  justify-items:flex-start;
+}
+
+#logo {
+  margin-top:10%;
+  border-radius:40%;
+  width:70%;
+  height:20%; 
+}
+#menu-items {
+  height:60%;
+  width:100%;
+  background-color:#87bdd8;
+}
+.list-items {
+  box-sizing: border-box;
+  color: white;
+  margin:0;
+  padding:0;
+  font-size:20px;
+  list-style-type:none;
+}
+.list-items a {
+  display:block;
+  width:90%;
+  height:5vh;
+}
+.link-text {
+  color:white;
+  text-decoration:none;
+  font-size:120%;
+}
+.list-items a:hover {
+  background-color: gray;
+}
+#title {
+  margin-left:19%;
+  background-color:#cfe0e8;
+  height:10vh;
+  text-align:center;
+}
+#introduction {
+  display: flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  margin-left:19%;
+  background-color:#daebe8;
+  width:80vw;
+  height:100vh;
+}
+#introduction-image {
+  margin-top:5%;
+  height:40%;
+  width: 40%;
+  border-style:solid;
+}
+#introduction-text {
+  margin-top:10px;
+  font-size:20px;
+  height: 40%;
+  width:60%;
+  color:black;
+  text-indent: 30px;
+  line-height:1.5;
+}
+.barrier {
+  width:100vw;
+  background-color: #b7d7e8;
+  height:20vh;
+}
+.box {
+  display: flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  background-color: #daebe8;
+  width:80vw;
+  height:120vh;
+  margin-left:19%;
+}
+.balance-container {
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  margin-top:10px;
+  font-size:20px;
+  font-weight:bold;
+  height: 60%;
+  width:60%;
+  color:black;
+  background-color:white;
+  margin:0;
+}
+.title-text{
+  font-weight:bold;
+  font-size:50px;
+}
+.text-input {
+  margin:10px;
+  width:80%;
+}
+.field-format {
+  width:60%;
+  padding:10%;
+  margin:5%;
+}
+.form-format {
+  padding:0;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  width:60%;
+  height:60%;
+}
+.submit-button {
+  margin-left:30%;
+}
+.parallax {
+  /* The image used */
+  background-image: url("/happiness.a3ee1e5a.jpg");
+
+  /* Set a specific height */
+  min-height: 100vh;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*# sourceMappingURL=/global.e50bbfba.css.map */
